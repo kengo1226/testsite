@@ -1,0 +1,876 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header,
+main,
+footer,
+.container {
+  overflow: hidden;
+}
+
+/* 共通クラス */
+.container {
+  width: 1040px;
+  margin: 0 auto;
+}
+
+a.main-btn {
+  color: #ffffff;
+  padding: 12px 75px;
+  background: rgb(21, 21, 247);
+  border: 2px solid rgb(21, 21, 247);
+  font-weight: bold;
+  border-radius: 100px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+a.main-btn:hover {
+  color: rgb(21, 21, 247);
+  background: #ffffff;
+  border: 2px solid rgb(21, 21, 247);
+}
+
+.mobile-icon {
+  display: none;
+}
+
+.primary-hl {
+  text-align: center;
+}
+
+.primary-hl p {
+  color: #374dfa;
+  font-weight: bold;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.primary-hl h3 {
+  color: #333333;
+  font-weight: bold;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 40px;
+}
+
+.forPc {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .primary-hl p {
+    color: #374dfa;
+    font-weight: bold;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .primary-hl h3 {
+    color: #333333;
+    font-weight: bold;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 2.25rem;
+  }
+
+  .forPc {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .primary-hl p {
+    color: #374dfa;
+    font-weight: bold;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 5.5vw;
+    margin-bottom: 2%;
+  }
+
+  .primary-hl h3 {
+    font-weight: bold;
+    font-size: 7vw;
+  }
+
+  a.main-btn {
+    padding: 3% 10%;
+    font-size: 1rem;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+}
+
+/* header */
+header {
+  width: 100%;
+}
+
+header nav {
+  padding: 17px 0 !important;
+}
+
+nav .nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav h1 a {
+  color: #333;
+}
+
+nav .nav-content ul {
+  display: flex;
+}
+
+nav .nav-content ul li {
+  margin-right: 25px;
+}
+
+nav .nav-content ul li:last-of-type {
+  margin-right: 0;
+}
+
+nav .nav-content ul li a {
+  color: #333333;
+  cursor: pointer;
+}
+
+nav .nav-content ul li a.contact-btn {
+  color: #fff;
+  background: rgb(21, 21, 247);
+  padding: 8px 18px;
+  border-radius: 100px;
+}
+
+/* ======= hero section ====== */
+#hero {
+  width: 100%;
+  height: 65vh;
+  position: relative;
+}
+
+#hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#hero .hero-content {
+  position: absolute;
+  top: 57%;
+  left: 20%;
+}
+
+#hero .hero-content h2 {
+  color: #ffffff;
+  font-size: 55px;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+/* ========= longsection ========== */
+#long {
+  width: 100%;
+  /* height: 200px; */
+}
+
+#long .long-box {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#long .long-box img {
+  width: 100%;
+  object-fit: contain;
+}
+
+/* ======== about section ======= */
+#about {
+  width: 100%;
+  padding: 120px 0;
+  position: relative;
+}
+
+#about::before {
+  content: "";
+  position: absolute;
+  top: 4%;
+  right: -10%;
+  background: url(./images/top-1-bg.svg);
+  width: 600px;
+  height: 600px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+#about .about-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+#about .about-box .about-content {
+  width: 500px;
+}
+
+#about .about-box .about-content h3 {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 31px;
+  margin-bottom: 20px;
+}
+
+#about .about-box .about-content p {
+  margin-bottom: 40px;
+}
+
+#about .about-box img {
+  width: 450px;
+  border-radius: 5px;
+  box-shadow: 9px 2px 35px -5px #c7c7c7;
+  z-index: 10;
+}
+
+/* ======== service section ======= */
+#service {
+  width: 100%;
+  padding: 120px 0 200px 0;
+  position: relative;
+}
+
+#service::before {
+  content: "";
+  position: absolute;
+  top: 4%;
+  left: -17%;
+  background: url(./images/top-2-bg.svg);
+  width: 722px;
+  height: 600px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+#service .service-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+#service .service-box .service-content {
+  width: 500px;
+}
+
+#service .service-box .service-content h3 {
+  font-size: 31px;
+  margin-bottom: 20px;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+#service .service-box .service-content p {
+  margin-bottom: 40px;
+}
+
+#service .service-box img {
+  width: 450px;
+  border-radius: 5px;
+  box-shadow: 9px 2px 35px -5px #c7c7c7;
+  z-index: 10;
+}
+
+/* ======== greeting section ======= */
+#greeting {
+  width: 100%;
+  padding: 0 0 200px 0;
+  position: relative;
+}
+
+#greeting::before {
+  content: "";
+  position: absolute;
+  top: -21%;
+  right: -16%;
+  background: url(./images/top-3-bg.svg);
+  width: 727px;
+  height: 600px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+#greeting .greeting-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+#greeting .greeting-box .greeting-content {
+  width: 500px;
+}
+
+#greeting .greeting-box .greeting-content h3 {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 31px;
+  margin-bottom: 20px;
+}
+
+#greeting .greeting-box .greeting-content p {
+  margin-bottom: 40px;
+}
+
+#greeting .greeting-box img {
+  width: 450px;
+  border-radius: 5px;
+  box-shadow: 9px 2px 35px -5px #c7c7c7;
+  z-index: 10;
+}
+
+/* ======== contact section ======= */
+#contact {
+  width: 100%;
+  height: 35vh;
+  position: relative;
+}
+
+#contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(21, 21, 247, 0.1);
+}
+
+#contact img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#contact .contact-box {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#contact .contact-box h4 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  padding-bottom: 12px;
+}
+
+#contact .contact-box p {
+  color: #fff;
+  padding-bottom: 25px;
+}
+
+#contact a.bottom-btn {
+  color: rgb(21, 21, 247);
+  background: #fff;
+  font-weight: bold;
+  font-size: 22px;
+  padding: 10px 55px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+/* ======== footer section ========== */
+footer {
+  width: 100%;
+  height: auto;
+  background: #0e1c88;
+  padding-top: 55px;
+}
+
+footer .footer-container {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  color: #fff;
+}
+
+footer .footer-container .footer-left {
+  width: 45%;
+}
+
+footer .footer-container .footer-left p:first-of-type {
+  font-weight: bold;
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+
+footer .footer-container .footer-right p {
+  font-size: 15px;
+}
+
+footer .footer-container .footer-right {
+  display: flex;
+  justify-content: space-between;
+  width: 55%;
+}
+
+footer .footer-container .footer-right p a {
+  color: #fff;
+}
+
+footer p.copy {
+  color: #fff;
+  text-align: center;
+  padding: 60px 0 10px 0;
+  font-size: 12px;
+}
+
+/* ========= 1040pxで一旦調整 =========== */
+@media screen and (max-width: 1040px) {
+  .container {
+    width: 96%;
+    margin: 0 auto;
+    overflow: initial;
+  }
+
+  #hero .hero-content {
+    left: 9%;
+  }
+
+  /* about h3 */
+  #about .about-box .about-content h3,
+  #service .service-box .service-content h3,
+  #greeeting .greeting-box .greeting-content h3 {
+    font-size: 3vw;
+  }
+
+  #about .about-box .about-content,
+  #service .service-box .service-content,
+  #greeting .greeting-box .greeting-content {
+    width: 49%;
+  }
+
+  #about .about-box img,
+  #service .service-box img,
+  #greeting .greeting-box img {
+    width: 49%;
+  }
+
+  /* contact */
+  #contact .contact-box {
+    width: 85%;
+  }
+}
+
+/* ========== respnsive TABLET 768px ========== */
+@media screen and (max-width: 768px) {
+  /* 共通クラス */
+  .container {
+    width: 94%;
+    margin: 0 auto;
+    overflow: initial;
+  }
+
+  .mobile-icon {
+    display: block;
+    font-size: 1.5rem;
+    z-index: 100;
+  }
+
+  .mobile-icon .fa-xmark {
+    display: none;
+  }
+
+  .mobile-icon.close .fa-bars {
+    display: none;
+  }
+
+  .mobile-icon.close .fa-xmark {
+    display: block;
+  }
+
+  a.main-btn {
+    display: block;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* ===== header ==== */
+  header .nav-content ul {
+    position: fixed;
+    /* position: absolute; */
+    top: 0;
+    right: 0;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    width: 0px;
+    height: 100vh;
+    right: -300px;
+    transition: all 0.3s;
+
+    display: block;
+    padding: 8%;
+  }
+
+  header .nav-content ul.active {
+    visibility: visible;
+    opacity: 1;
+    width: 50%;
+    height: 100vh;
+    background: #fff;
+    position: fixed;
+    /* position: absolute; */
+    top: 0;
+    right: 0;
+    z-index: 10;
+    padding: 8%;
+    transition: all 0.3s;
+  }
+
+  header .nav-content ul li {
+    margin-bottom: 12%;
+  }
+
+  header .nav-content ul.active li {
+    margin-bottom: 12%;
+  }
+
+  /* ====== hero section ====== */
+
+  #hero .hero-content {
+    top: 65%;
+    left: 8%;
+  }
+
+  #hero .hero-content h2 {
+    font-size: 2.5rem;
+  }
+
+  /* ======= long section ======= */
+  #long .long-box {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* ======== about section ======= */
+  #about {
+    width: 100%;
+    padding: 10% 0;
+    position: relative;
+  }
+
+  #about::before {
+    content: "";
+    position: absolute;
+    top: 41%;
+    right: -51%;
+    background: url(./images/top-1-bg.svg);
+    width: 101vw;
+    height: 86vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+  #about .about-box {
+    display: block;
+  }
+
+  #about .about-box .about-content {
+    width: 100%;
+  }
+
+  #about .about-box .about-content h3 {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 5%;
+  }
+
+  #about .about-box .about-content p {
+    margin-bottom: 10%;
+  }
+
+  #about .about-box img {
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 10%;
+    box-shadow: 9px 2px 35px -5px #c7c7c7;
+    z-index: 10;
+  }
+
+  /* ======== service section ======= */
+  #service {
+    width: 100%;
+    padding: 15% 0 15% 0;
+    /* background: lightblue; */
+    /* padding: 120px 0 200px 0; */
+    position: relative;
+  }
+
+  #service::before {
+    content: "";
+    position: absolute;
+    top: 2%;
+    left: -78%;
+    background: url(./images/top-2-bg.svg);
+    width: 122vw;
+    height: 106vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+  #service .service-box {
+    display: block;
+  }
+
+  #service .service-box .service-content {
+    width: 100%;
+  }
+
+  #service .service-box .service-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 6%;
+    margin-top: 5%;
+    font-family: "Noto Sans JP", sans-serif;
+  }
+
+  #service .service-box .service-content p {
+    margin-bottom: 6%;
+  }
+
+  #service .service-box img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 9px 2px 35px -5px #c7c7c7;
+  }
+
+  /* ======== greeting section ======= */
+  #greeting {
+    width: 100%;
+    padding: 0 0 15% 0;
+    /* background: pink; */
+    position: relative;
+  }
+
+  #greeting::before {
+    content: "";
+    position: absolute;
+    top: 2%;
+    right: -54%;
+    background: url(./images/top-3-bg.svg);
+    width: 122vw;
+    height: 106vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+  #greeting .greeting-box {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #greeting .greeting-box .greeting-content {
+    width: 100%;
+  }
+
+  #greeting .greeting-box .greeting-content h3 {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 6%;
+    margin-top: 5%;
+  }
+
+  #greeting .greeting-box .greeting-content p {
+    margin-bottom: 6%;
+  }
+
+  #greeting .greeting-box img {
+    width: 100%;
+    border-radius: 5px;
+    /* margin-top: 10%; */
+    box-shadow: 9px 2px 35px -5px #c7c7c7;
+  }
+
+  /* ====== contact section ===== */
+  #contact .contact-box h4 {
+    font-size: 1.25rem;
+  }
+
+  #contact .contact-box {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 96%;
+  }
+
+  /* ======= footer section ======= */
+  footer .footer-container {
+    display: block;
+  }
+
+  footer .footer-right,
+  footer .footer-left {
+    width: 100% !important;
+  }
+
+  footer .footer-right,
+  footer .footer-right p a {
+    display: block !important;
+  }
+
+  footer .footer-right {
+    margin-top: 2rem;
+  }
+
+  footer .footer-right p:not(:last-of-type) {
+    margin-bottom: 0.75rem;
+  }
+}
+
+/* ＝＝＝＝＝＝＝＝　スマホ　＝＝＝＝＝＝＝ */
+@media screen and (max-width: 414px) {
+  nav h1 a {
+    font-size: 6vw;
+  }
+
+  header .nav-content ul.active {
+    width: 80%;
+  }
+
+  #hero .hero-content {
+    top: 63%;
+    left: 5%;
+  }
+
+  #hero .hero-content h2 {
+    font-size: 7vw;
+  }
+
+  /* about */
+  #about {
+    padding-top: 10%;
+    position: relative;
+  }
+
+  #about::before {
+    content: "";
+    position: absolute;
+    top: 49%;
+    right: -60%;
+    background: url(./images/top-1-bg.svg);
+    width: 109vw;
+    height: 94vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+  #about .about-box .about-content h3 {
+    font-size: 6vw;
+    margin-bottom: 8%;
+  }
+
+  #about .about-box img {
+    margin-top: 15%;
+    margin-bottom: 6%;
+  }
+
+  /* ====== service ====== */
+  #service {
+    padding-top: 15%;
+    position: relative;
+  }
+
+  #service::before {
+    content: "";
+    position: absolute;
+    top: 4%;
+    left: -70%;
+    background: url(./images/top-2-bg.svg);
+    width: 122vw;
+    height: 106vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+  #service .service-box .service-content h3 {
+    font-size: 6vw;
+    margin-bottom: 8%;
+    margin-top: 7%;
+  }
+
+  /* ====== greeting ====== */
+
+  #greeting {
+    position: relative;
+    margin-top: 10%;
+  }
+
+  #greeting::before {
+    content: "";
+    position: absolute;
+    top: -2%;
+    right: -85%;
+    background: url(./images/top-3-bg.svg);
+    width: 151vw;
+    height: 149vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+  #greeting .greeting-box .greeting-content h3 {
+    font-size: 6vw;
+    margin-bottom: 8%;
+    margin-top: 7%;
+  }
+
+  /* ========= contact section ========== */
+  #contact .contact-box h4 {
+    font-size: 6vw;
+  }
+
+  #contact .contact-box p {
+    font-size: 4.5vw;
+  }
+
+  #contact a.bottom-btn {
+    font-size: 1rem;
+    padding: 3% 15%;
+  }
+
+  /* ====== footer section ====== */
+  footer .footer-container .footer-left p:first-of-type {
+    font-size: 1.25rem;
+  }
+
+  footer .footer-container .footer-left p:nth-of-type(2) {
+    padding-bottom: 0.5rem;
+  }
+
+  footer .footer-container .footer-left p {
+    font-size: 0.9rem;
+  }
+}

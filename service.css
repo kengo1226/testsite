@@ -1,0 +1,115 @@
+/* ======= hero section ====== */
+#hero {
+  width: 100%;
+  height: 40vh;
+  position: relative;
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(101, 119, 255, 0.18);
+}
+
+#hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#hero .hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+#hero .hero-content p {
+  color: #374dfa;
+  font-weight: bold;
+  font-size: 27px;
+}
+
+#hero .hero-content h2 {
+  color: #ffffff;
+  font-size: 55px;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+/* ========= about txt section ========= */
+#service-txt {
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+#service-txt .primary-hl {
+  margin-bottom: 50px;
+}
+
+#service-txt p {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  /* about */
+  #about {
+    padding-top: 0;
+  }
+
+  #about::before,
+  #service::before,
+  #greeting::before {
+    display: none;
+  }
+
+  #about .about-box {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #about .about-box img {
+    margin-top: 0;
+  }
+
+  #about .about-box .about-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 6%;
+    margin-top: 5%;
+  }
+}
+
+/* スマートフォン */
+@media screen and (max-width: 414px) {
+  /* ====== hero section ======= */
+  #hero .hero-content p {
+    font-size: 5.5vw;
+  }
+
+  #hero .hero-content h2 {
+    font-size: 10vw;
+  }
+
+  /* about company */
+  #about-company .row {
+    display: block;
+  }
+
+  #about-company .row p:first-of-type,
+  #about-company .row p:last-of-type {
+    font-size: 1rem;
+  }
+
+  #about-company .row p:first-of-type {
+    width: 100%;
+    text-indent: 0;
+  }
+
+  #about-company .row p:last-of-type {
+    width: 100%;
+  }
+}
