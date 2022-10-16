@@ -1,0 +1,26 @@
+nav {
+  width: 100%;
+  box-shadow: 0px 5px 5px 0px rgba(221, 221, 221, 0.5);
+}
+
+.nav-container {
+  max-width: 80%;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+h2 {
+  text-decoration: none;
+}
+
+.menu-list ul {
+  display: flex;
+}
+
+.menu-list ul li:not(:last-of-type) {
+  margin-right: 2.5rem;
+}

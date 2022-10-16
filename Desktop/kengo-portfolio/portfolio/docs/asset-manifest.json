@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/kengo1226/react-portfolio.git/static/css/main.6635f3d6.css",
+    "main.js": "/kengo1226/react-portfolio.git/static/js/main.448a043b.js",
+    "static/media/about-img.jpg": "/kengo1226/react-portfolio.git/static/media/about-img.6c93964b3cf01651040e.jpg",
+    "static/media/work-img1.png": "/kengo1226/react-portfolio.git/static/media/work-img1.4748978c7bdc65ab6ccf.png",
+    "static/media/jquery.svg": "/kengo1226/react-portfolio.git/static/media/jquery.326b325cc87e4f19c26861b716ce1068.svg",
+    "static/media/wordpress.svg": "/kengo1226/react-portfolio.git/static/media/wordpress.7c8891a23c219203b82ce9ed2d1d9c9a.svg",
+    "static/media/photoshop.svg": "/kengo1226/react-portfolio.git/static/media/photoshop.29f7031af2e65fb2e5df57fb5287dd6f.svg",
+    "static/media/react.svg": "/kengo1226/react-portfolio.git/static/media/react.2dd41da56d74897916edbc7353142744.svg",
+    "static/media/xd.svg": "/kengo1226/react-portfolio.git/static/media/xd.fa70edf41d3f208884ae2f7708e9c50f.svg",
+    "index.html": "/kengo1226/react-portfolio.git/index.html",
+    "static/media/javascript.svg": "/kengo1226/react-portfolio.git/static/media/javascript.64d9e0e76154cf546e6a54e6f4bfb9ac.svg",
+    "static/media/gatsby.svg": "/kengo1226/react-portfolio.git/static/media/gatsby.b4f522a1d532cbed427e8d85d7cbd4dd.svg",
+    "static/media/figma.svg": "/kengo1226/react-portfolio.git/static/media/figma.c067749beb553af4068c25e003227e96.svg",
+    "static/media/firebase.svg": "/kengo1226/react-portfolio.git/static/media/firebase.e684013a4b7b9be6f0dfba489beaf8f6.svg",
+    "static/media/css.svg": "/kengo1226/react-portfolio.git/static/media/css.8fe37b3430423bafeedb1dc7875a165a.svg",
+    "static/media/html.svg": "/kengo1226/react-portfolio.git/static/media/html.f064b3740c16d30101bff45358ea72c1.svg",
+    "static/media/vue.svg": "/kengo1226/react-portfolio.git/static/media/vue.8a06a5910da5afdef8116e30fb335c5a.svg",
+    "main.6635f3d6.css.map": "/kengo1226/react-portfolio.git/static/css/main.6635f3d6.css.map",
+    "main.448a043b.js.map": "/kengo1226/react-portfolio.git/static/js/main.448a043b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6635f3d6.css",
+    "static/js/main.448a043b.js"
+  ]
+}
