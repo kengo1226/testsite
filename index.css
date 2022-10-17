@@ -26,6 +26,7 @@ footer,
 .container {
   width: 1040px;
   margin: 0 auto;
+  overflow: initial;
 }
 
 a.main-btn {
@@ -174,13 +175,14 @@ nav .nav-content ul li a.contact-btn {
 #hero .hero-content {
   position: absolute;
   top: 57%;
-  left: 20%;
+  left: 17%;
 }
 
 #hero .hero-content h2 {
   color: #ffffff;
   font-size: 55px;
   font-family: "Noto Sans JP", sans-serif;
+  text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.2);
 }
 
 /* ========= longsection ========== */
@@ -198,7 +200,8 @@ nav .nav-content ul li a.contact-btn {
 
 #long .long-box img {
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  height: 200px;
 }
 
 /* ======== about section ======= */
