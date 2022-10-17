@@ -770,6 +770,10 @@ footer p.copy {
     font-size: 7vw;
   }
 
+  #long .long-box img {
+    height: 28vw;
+  }
+
   /* about */
   #about {
     padding-top: 10%;
