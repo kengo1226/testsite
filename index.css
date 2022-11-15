@@ -248,6 +248,7 @@ nav .nav-content ul li a.contact-btn {
   border-radius: 5px;
   box-shadow: 9px 2px 35px -5px #c7c7c7;
   z-index: 10;
+  object-fit: cover;
 }
 
 /* ======== service section ======= */
@@ -441,6 +442,116 @@ footer p.copy {
   font-size: 12px;
 }
 
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+会社概要ページ
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+#hero-sub {
+  width: 100%;
+  height: 40vh;
+  position: relative;
+}
+
+#hero-sub::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(101, 119, 255, 0.18);
+}
+
+#hero-sub img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#hero-sub .hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+#hero-sub .hero-content p {
+  color: #374dfa;
+  font-weight: bold;
+  font-size: 27px;
+}
+
+#hero-sub .hero-content h2 {
+  color: #ffffff;
+  font-size: 55px;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+/* ========= about txt section ========= */
+#about-txt {
+  margin-top: 80px;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+#about-txt::before {
+  content: "";
+  position: absolute;
+  top: -25%;
+  right: -24%;
+  background: url(./images/top-4-bg.svg);
+  width: 800px;
+  height: 800px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+#about-txt .primary-hl {
+  margin-bottom: 50px;
+}
+
+#about-txt p {
+  text-align: center;
+}
+
+/* ========= aboutp-company section ======== */
+#about-company {
+  margin-bottom: 100px;
+}
+
+#about-company .primary-hl {
+  margin-bottom: 50px;
+}
+
+#about-company .about-content {
+  width: 100%;
+}
+
+#about-company .row {
+  display: flex;
+  border-bottom: 1px solid #a7a7a7;
+  margin-bottom: 30px;
+}
+
+#about-company .row p:first-of-type {
+  font-weight: bold;
+  width: 25%;
+  font-size: 18px;
+  padding-bottom: 8px;
+  text-indent: 20px;
+}
+
+#about-company .row p:last-of-type {
+  width: 75%;
+  font-size: 18px;
+  padding-bottom: 8px;
+}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+事業内容ページ
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+
 /* ========= 1040pxで一旦調整 =========== */
 @media screen and (max-width: 1040px) {
   .container {
@@ -517,15 +628,15 @@ footer p.copy {
     position: fixed;
     /* position: absolute; */
     top: 0;
-    right: 0;
+    /* right: 0; */
+    bottom: 0;
     z-index: 10;
     visibility: hidden;
     opacity: 0;
-    width: 0px;
+    width: 60%;
     height: 100vh;
     right: -300px;
     transition: all 0.3s;
-
     display: block;
     padding: 8%;
   }
@@ -533,16 +644,17 @@ footer p.copy {
   header .nav-content ul.active {
     visibility: visible;
     opacity: 1;
-    width: 50%;
+    width: 60%;
     height: 100vh;
     background: #fff;
     position: fixed;
     /* position: absolute; */
     top: 0;
     right: 0;
+    bottom: 0;
     z-index: 10;
     padding: 8%;
-    transition: all 0.3s;
+    /* transition: all 0.3s; */
   }
 
   header .nav-content ul li {
@@ -860,7 +972,7 @@ footer p.copy {
   }
 
   #contact .contact-box p {
-    font-size: 1rem;
+    font-size: 4.5vw;
   }
 
   #contact a.bottom-btn {

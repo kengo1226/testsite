@@ -61,6 +61,8 @@
 #greeting-txt .greeting-box .greeting-left p {
   color: #374dfa;
   font-weight: bold;
+  font-size: 22px;
+  padding-top: 10px;
 }
 
 #greeting-txt .greeting-box .greeting-left img {
